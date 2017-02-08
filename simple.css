@@ -1,0 +1,77 @@
+.parent {
+	width: 100%;
+	height: 100%;
+	background: none;
+	display:flex;
+	flex-direction: column;
+}
+
+.child {
+	width: 100%;
+	height: 150px;
+	background: blue;
+	margin: 10px;
+}
+
+.child:nth-child(1){
+	height: 150px;
+
+}
+
+.child:nth-child(2){
+	height: 150px;
+	flex-grow: 1;
+	display: flex;
+	background: red;
+	margin 10px;
+}
+
+.child:nth-child(3){
+	height: 150px;
+	flex-grow: 1;
+	height: 150px;
+	display: flex;
+	background: green;
+}
+
+.child:nth-child(4){
+	height: 150px;
+}
+
+
+.grandchild {
+	height: 150px;
+	width: 150px;
+	margin: 10px;
+	background: cyan;
+	display: flex;
+	flex-grow: 1;	
+}
+
+.grandchild:nth-child(1){
+	margin-left: 0px;
+}
+
+.grandchild:nth-child(2){
+
+	margin-right: 0px;
+}
+
+.grandchild2 {
+	height: 150px;
+	margin: 10px;
+	width: 150px;
+	background: yellow;
+}
+
+.grandchild2:nth-child(1){
+	margin-left: 0px;
+}
+
+.grandchild2:nth-child(2){
+}	
+
+.grandchild2:nth-child(3){
+	margin-right: 0px;
+}
+
