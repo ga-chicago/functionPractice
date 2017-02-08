@@ -65,20 +65,16 @@ tellFortune(6, "James Marsden", "Chicago", "ama de casa")
 //You will be a ama de casa in Chicago , and married to James Marsden with 6 kids.
 
 
-5. //didn't finish
-var array = [];
-function findNumers(array) {
+5.
 
+function findNumbers(array) {
+	var ordArray = array.sort(function(a, b) {
+		return a - b;
+	});
+	console.log(array[1] + " , " + array[array.length - 2])
 
-
-	//have array of numbers, loop through array and if number is 2nd lowest, return that, if number is highest, return that, then print both numbers
 }
 
-/*
-5. Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively.
-Sample array : [1,2,3,4,5]
-Expected Output : 2,4
-*/
 
 6.
 
