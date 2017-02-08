@@ -65,12 +65,11 @@ tellFortune(6, "James Marsden", "Chicago", "ama de casa")
 //You will be a ama de casa in Chicago , and married to James Marsden with 6 kids.
 
 
-5.
-
+5. //didn't finish
 var array = [];
 function findNumers(array) {
 
-	
+
 
 	//have array of numbers, loop through array and if number is 2nd lowest, return that, if number is highest, return that, then print both numbers
 }
@@ -112,13 +111,6 @@ function longestName(array) {
 	return array[index];
 }
 
-
-
-
-
-/*Write a JavaScript function that accepts a list of country names as input and returns the longest country name as output. Go to the editor
-Sample function : LongestCountryName(["Australia", "Germany", "United States of America"])
-Expected output : "United States of America"*/
 
 8.
 
