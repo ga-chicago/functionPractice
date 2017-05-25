@@ -1,4 +1,4 @@
-for (i = 0; i <= 10; i++){
+for (var i = 0; i <= 10; i++){
 	console.log(i * 9)
 }
 
@@ -14,7 +14,7 @@ var assignGrade = function(score){
 	} else{return "A"}
 }
 
-for (i = 60; i <= 100; i++){
+for (var i = 60; i <= 100; i++){
 	console.log("For " +  i + " your grade is " + assignGrade(i))
 }
 
@@ -35,12 +35,40 @@ var highLow = function(){
 }
 
 var letters = function(words, letter){
-	var instances = []
-	if(i = 0; i < words.split('').length; i++){
-		instances.push(words.split("")[i])
+	var instances = [];
+	var lower = words.toLowerCase();
+	for(var i = 0; i < lower.split('').length; i++){
+
+		if (lower.split('')[i] === letter){
+			instances.push(lower.split('')[i])
+		}
 	}
 
 	return instances.length
-
 }
+
+var ctry = ['france', 'united states', 'germany', 'russia']
+
+
+
+var longName = function(countries){
+	var lgth = 0;
+	var longest;
+	for(var i = 0; i < countries.length; i++){
+		if(countries[i].length > lgth){
+			lgth = countries[i].length;
+			longest = countries[i]
+		}
+	}
+	return longest
+}
+
+var flip = function(number){
+	console.log(number.toString().split("").reverse().join(""));
+}
+
+
+
+
+
 
