@@ -39,9 +39,39 @@ var secondLowestGreatest = function(){
 }
 
 //9
-var numOfLetters = function count(string, char) {
-	console.log(str.replace(/"char"/g,).length)
+var getFrequency = function(string, character) {
+    var freq = {};
+    for (var i=0; i<string.length;i++) {
+        var character = string.charAt(i);
+        if (freq[character]) {
+           freq[character]++;
+        } else {
+           freq[character] = 1;
+        }
+    }
 
+    console.log(freq);
 };
 
 //10
+
+	var longestCountryName = function (array) {
+		var longest = "";
+
+		array.forEach(function(string) {
+			if (string.length > longest.length) {
+			longest = string;
+			}	
+
+		});
+		console.log(longest);
+  }
+
+//11
+var reverse = function (n) {
+    for(var r = 0; n; n = Math.floor(n / 10)) {
+        r *= 10;
+        r += n % 10;
+    }
+    return r;
+};
