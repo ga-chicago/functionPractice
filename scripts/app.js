@@ -40,6 +40,7 @@ for (score = 60; score >= 60 && score <=100; score++) {
     }
 }
 
+
 /* Write a function named tellFortune that:
     Takes 4 arguments: number of children, partner's name, geographic location, job title.
     Tutputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
@@ -56,10 +57,94 @@ tellFortune(3, "Kitty", "London", "Research Analyst");
 
 // Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively. Sample array : [1,2,3,4,5] Expected Output : 2,4
 var secondBest = function(array){
+    var lowest = array[0];
+    var secondLowest = array[0];
+    var greatest = array[0];
+    var secondGreatest = array[0];
 
+    for (var i = 0; i < array.length; i++){
+
+        if (array[i] > lowest){
+            if (array[i] < secondLowest || lowest === secondLowest){
+                secondLowest = array[i]
+            } 
+        } 
+
+        else if (array[i] >= secondLowest){
+            if(secondLowest > lowest && array[i] != lowest){
+                secondLowest = lowest
+             }
+        } 
+
+        else if (array[i] < greatest){
+            if (array[i] > secondGreatest){
+                secondGreatest = array[i]
+            } 
+        } 
+
+        else {
+            if(secondGreatest < greatest && array[i] != greatest) {
+                secondGreatest = greatest
+             } 
+        } 
+    }
+    console.log(secondLowest + ", " + secondGreatest);
 }
+        
+
+secondBest([2, 8, 4, 5, 6]); 
+
+
 // Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string. Sample arguments : 'Listen to the river sing sweet songs, 'o' Expected output : 1
+var countOccurences = function(string, letter){
+    var count = 0;
+    for (var i = 0; i < string.length; i++){
+        if (string.charAt(i) === letter){
+             count++;
+            }
+        }
+    console.log(count);
+    }
+
+countOccurences("Everybody needs a nemesis. Sherlock Holmes had his Dr. Moriarty.", "e");
+countOccurences("Mountain Dew has its Mello Yello.", "t");
+countOccurences("Even Maggie has that baby with the one eyebrow.", "a"); 
+
 
 // Write a JavaScript function that accept a list of country names as input and returns the longest country name as output. Go to the editor Sample function : LongestCountryName(["Australia", "Germany", "United States of America"]) Expected output : "United States of America"
+var findLongestName = function(array) {
+    var longestCount = 0;
+    var longestName
+    for(var i = 0; i < array.length; i++) {
+        if(array[i].length > longestCount) {
+        longestCount = array[i].length
+        longestName = array[i]
+        }
+    }
+    console.log(longestName);    
+}
+
+findLongestName(["Australia", "Germany", "United States of America"]);
+
 
 // Write a JavaScript function that reverse a number. Example x = 32243; Expected Output : 34223
+var reverseReverse = function(number){
+    numberString = number.toString();
+    console.log(numberString.split("").reverse().join(""));
+}
+
+reverseReverse(32243);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
