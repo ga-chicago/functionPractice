@@ -31,3 +31,10 @@ for (i = 60; i <= 100; i++){
 const tellFortune = (numOfChildren, partnerName, location, job) => {
 	console.log("You will be a/an " + job + " in " + location + ", and married to " + partnerName + " with " + numOfChildren + " kid/kids.");
 };
+
+// Number 5
+const arr = [2, 5, 4, 1, 3];
+const secondHighLow = (array) => {
+	array.sort();
+	return (array[1] + ", " + array[array.length - 2]);
+};
