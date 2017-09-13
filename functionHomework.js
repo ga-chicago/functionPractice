@@ -1,8 +1,8 @@
 
 // Number 1
-for (i = 0; i <= 10; i++){
+for (let i = 0; i <= 10; i++){
 	console.log(i + " * 9 = " + (i * 9));
-	for (x = 0; x <= 10; x++){
+	for (let x = 0; x <= 10; x++){
 		console.log(i + (" * ") + x + (" = ") + (i * x));
 	};
 };
@@ -23,7 +23,7 @@ const assignGrade = (score) => {
 };
 
 // Number 3
-for (i = 60; i <= 100; i++){
+for (let i = 60; i <= 100; i++){
 	console.log("For your score of " + i + " you got the letter grade of " + assignGrade(i) + ".");
 };
 
@@ -38,3 +38,23 @@ const secondHighLow = (array) => {
 	array.sort();
 	return (array[1] + ", " + array[array.length - 2]);
 };
+
+// Number 6
+const occurs = (string, letter) => {
+	let split = [];
+	let numOccurs = 0;
+	split = string.split("");
+	for (let i = 0; i < split.length; i++){
+		if (split[i] === letter){
+			numOccurs++;
+		};
+	};
+	return (numOccurs);
+};
+
+
+
+
+
+
+
