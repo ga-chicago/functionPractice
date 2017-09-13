@@ -33,3 +33,14 @@ const assignGrade = (x) => {
 for (i = 60; i <= 100; i++) {
 	console.log('For ' + i + ', you got a ' + assignGrade(i));
 }
+
+//question 4
+
+const tellFortune = (numberChildren, namePartner, location, titleJob) => {
+	return 'You will be a ' + titleJob + ' in ' + location + ', and married to ' + namePartner + ' with ' + numberChildren + ' kids.'
+}
+
+tellFortune(3, 'Bjork', 'Iceland', 'walrus');
+tellFortune(0, 'Andy the Aardvark', 'Tuscaloosa', 'tow truck salesman');
+tellFortune(10, 'Winnie Fitzwalker', 'The Azores', 'commodities trader');
+
