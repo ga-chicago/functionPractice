@@ -16,14 +16,20 @@ for (i = 0; i <= 10; i++) {
 
 const assignGrade = (x) => {
 	if (x > 89) {
-		return console.log('A');
+		return 'A';
 	} else if (x > 79) {
-		return console.log('B');
+		return 'B';
 	} else if (x > 69) {
-		return console.log('C');
+		return 'C';
 	} else if (x > 59) {
-		return console.log('D');
+		return 'D';
 	} else {
-		return console.log('F');
+		return 'F';
 	}
 };
+
+//question 3
+
+for (i = 60; i <= 100; i++) {
+	console.log('For ' + i + ', you got a ' + assignGrade(i));
+}
