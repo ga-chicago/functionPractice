@@ -3,7 +3,7 @@ Function loop practice
 
 ## After you complete each problem
 - `git add .`
-- `git commit -m "I completed problem blah"
+- `git commit -m "I completed problem blah"`
 
 
 
