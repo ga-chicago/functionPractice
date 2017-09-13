@@ -12,16 +12,16 @@ const assignGrade = (grade) => {
 	if(grade >= 89) {
 		console.log("Congrats, you received an A!")
 
-	} else if(grade >= 89) {
+	} else if(grade >= 79) {
 		console.log("Congrats, you received a B!")
-	} else if(grade >= 89) {
+	} else if(grade >= 69) {
 		console.log("You received a C!")
-	} else if(grade >= 89) {
+	} else if(grade >= 59) {
 		console.log("Dude, you received a D.")
 	} else {
-		console.log("Congrats, you received a B!")
+		console.log("Get out. Leave. You failed me, or rather, I have failed you!")
 	} 
-}
+};
 
 
 
