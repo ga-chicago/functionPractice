@@ -25,13 +25,19 @@ const assignGrade = (grade) => {
 
 
 
-//3
-
+//3 
+^^^
 
 
 //4
 
+const tellFortune = (children, spouse, location, occupation) => {
+	alert('You will be a ' + occupation + " in " + location + ', and married to ' + spouse + " with " + children + ' kids.')
 
+}
+
+ 
+tellFortune (5, 'Maria', 'Chicago', 'Developer')
 
 
 //5
