@@ -27,3 +27,7 @@ for (i = 60; i <= 100; i++){
 	console.log("For your score of " + i + " you got the letter grade of " + assignGrade(i) + ".");
 };
 
+// Number 4
+const tellFortune = (numOfChildren, partnerName, location, job) => {
+	console.log("You will be a/an " + job + " in " + location + ", and married to " + partnerName + " with " + numOfChildren + " kid/kids.");
+};
