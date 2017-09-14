@@ -69,6 +69,16 @@ tellFortune(12, "Ann", "San Diego", "CEO in the tech industry");
 // stored and find the second lowest and second greatest numbers,
 // respectively. Sample array : [1,2,3,4,5] Expected Output : 2,4
 
+const numberExtractor = (numberArray) => {
+	const extractedArray = [];
+	const sortedArray = numberArray.sort(function(a, b){return a - b});
+	extractedArray.push(sortedArray[1]);
+	const reversedArray = numberArray.sort(function(a, b){return b - a});
+	extractedArray.push(reversedArray[1]);
+	return extractedArray.join();
+};
+numberExtractor([1,2,3,4,5]);
+
 
 // Write a JavaScript function that accepts two arguments, a string
 // and a letter and the function will count the number of
