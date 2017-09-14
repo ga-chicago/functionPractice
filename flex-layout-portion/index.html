@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header> 
+	<div id="logo">
+		<button id="styleme">Pretty colors</button>
+	</div>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</header>
+
+<div id="content">
+	<div id="sidebar"></div>
+	<div id="right-content">
+		<div id="right1"></div>
+		<div id="right4">
+		
+			<div id="right4a">
+				<div></div>
+				<div></div>
+			</div>
+			<div id="right4b">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+</footer>
+<script type="text/javascript">
+	var stylesheet = document.getElementsByTagName('link');
+	stylesheet = stylesheet[0];
+	var btn = document.getElementById('styleme');
+	btn.addEventListener('click', function () {
+		if(btn.innerText=="Pretty colors") {
+			stylesheet.setAttribute('href', 'css/style.colors.css');
+			btn.innerText = "plain old grey";
+		} else {
+			stylesheet.setAttribute('href', 'css/style.css');
+			btn.innerText = "Pretty colors";
+		}
+	})
+
+
+</script>
+</body>
+</html>
