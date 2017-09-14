@@ -50,15 +50,13 @@ tellFortune(5, 'Mary', 'Chicago', 'Lawyer');
 tellFortune(0, 'Rick', 'Alberta', 'Dentist');
 tellFortune(10, 'Susie', 'West Virginia', 'Nascar Driver');
 
-// #5  --> can't figure out how to print min and max
-const secLowSecHigh = () => {
-	const sampleArr = [13, 5, 25, 3, 17];
+// #5  --> need to figure out how to return both 
+const secLowSecHigh = (sampleArr) => {
 	const max = Math.max.apply(null, sampleArr);
 	sampleArr.splice(sampleArr.indexOf(max), 1);
 	const min = Math.min.apply(null, sampleArr);
 	sampleArr.splice(sampleArr.indexOf(min), 1);
-	return Math.min.apply(null, sampleArr), Math.max.apply(null, sampleArr);
-};
+	return ;
 secLowSecHigh();
 
 // #6
@@ -70,9 +68,30 @@ const getOccurrence = (string, character) => {
             occurrence += 1;
         }
     }
-    return occurrence
-}
+    return occurrence;
+};
 
 getOccurrence ('puff daddy is a playa', 'p');
+
+// #7 --> still need to complete
+const findLongestCountryName = (arr) => {
+	let arrSplit = arr.split(' ');
+	let longestCountryName = 0;
+	for (let i =0; i < arrSplit.length; i++) {
+		if (arrSplit[i].length > longestCountryName) {
+		longestCountryName = arrSplit[i];
+		}
+	}
+	return longestCountryName;
+};
+findLongestCountryName()
+
+
+
+
+
+
+
+
 
 
