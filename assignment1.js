@@ -77,6 +77,19 @@ const shakira = (arr[lowest], arr[highest]) => {
 
 
 
+const sense = (song, letter) => {
+	let occurrence = 0;
+
+	for( i = 0; i < song.length; i ++) {
+		if(song[i] === letter) {
+			occurrence += 1;
+		}
+	}
+	return occurrence
+}
+
+sense ("the wheels on the bus go up and down, up and down, up and down", 'u');
+
 
 
 
