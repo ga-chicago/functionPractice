@@ -82,16 +82,8 @@ const longestNation = (longestNationName) => {
 
 // 11.Write a JavaScript function that reverse a number. Example x = 32243; Expected Output : 34223
 
-const myNumber = 1237654;
  const numReverse = (num) => {
- 	let arr = [];
- 	let numString = num.toString();
- 	arr = numString.split("");
- 	arr.reverse();
- 	numString = "";
- 	for (let i = 0; i < arr.length; i++){
- 		numString += arr[i];
- 	};
- 	return (parseInt(numString));
- };
+ 	num=num + "";
+ 	return num.split("").reverse().join("");
+ }
  numReverse(123456)
