@@ -59,8 +59,29 @@ tellFortune(3, "Sally", "Denver", "botonist")
 tellFortune(1, "Tara", "San Francisco", "writer")
 tellFortune(3, "Lacy", "Cleaveland", "chef")
 
+// 5.
 
+function arrayEval = (array) => {
+	small = Math.max(array)
+	large = Math.min(array)
+	//const array = [4,5,7,3,22,89,6,2433];
+	for (a = 1; a < array.length; a++) {
+		for (i in array) 
+	}
 
+}
+
+// 6.
+
+const countLet = (string, letter) => {
+	let countTotal = 0
+	for (l = 0; l <= string.length; l++) {
+		if (string[l] === letter){
+		countTotal = countTotal +1;
+		}
+	}
+	console.log(countTotal)
+}
 
 
 
