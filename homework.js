@@ -3,7 +3,8 @@
 for (let i = 0; i <= 10; i++){
 		console.log(i * 9);
 	}
-
+//i need to understand the second part more
+//that way i can better understand
 // 2.Write a function named assignGrade that: takes 1 argument, a number score(examle: 89 returns B). returns a grade for the score, either "A", "B", "C", "D", or "F". Call that function for a few different scores and log the result to make sure it works.
 
 const assignGrade = (x) => {
