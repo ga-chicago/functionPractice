@@ -34,6 +34,20 @@ tellFortune(9,"Julianna", "Beverly", "real estate developer")
 tellFortune(4,"Steve", "Naperville", "programmer and world traveler")
 tellFortune(5,"Mary Jane", "Naperville", "President")
 
+// 10.
+const longestCountryName = (x) => {
+  	var position;
+  	var longest = 0;
+  	for(let i = 0; i < x.length; i++) {
+  		if(x[i].length > longest){ 
+  			position = i 
+  			longest = x[i].length
+  		}
+  	}
+  		
+  	return x[position]
+}
+
 
 
 
