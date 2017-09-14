@@ -28,3 +28,14 @@ tellFortune(5, "Amanda" , "Spain", "Matador");
 tellFortune(1, "Samantha", "New York", "Investment Banker");
 tellFortune(3, "Jenna", "New Zeeland", "Sailboat Captain");
 
+// problem 11
+const reverseNum = () => {
+	let number = prompt("Enter number");
+
+	if (!parseInt(number)){
+		return null;
+	}
+	return parseInt(number.split('').reverse().join(''));
+}
+
+reverseNum();
