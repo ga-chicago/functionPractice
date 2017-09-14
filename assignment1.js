@@ -1,7 +1,7 @@
 //1- cant display full function
 for( i = 0; i < 11; i++) {
 
-	console.log(i + ' * 9' + ' = ' + i *9)
+	console.log(i + ' * 9= ' + (i *9))
 }
 
 
@@ -27,6 +27,9 @@ const assignGrade = (grade) => {
 
 //3 
 ^^^
+for (i = 60; i <101; i++) {
+	assignGrade(i)
+}
 
 
 //4
@@ -40,6 +43,13 @@ const tellFortune = (children, spouse, location, occupation) => {
 tellFortune (5, 'Maria', 'Chicago', 'Developer')
 tellFortune (0, 'Oprah', 'LA', 'Sugar Baby')
 tellFortune (2, 'Claudia', 'Paris', 'Philantropist')
+
+//class answer
+
+const tellFortune = (children,spouse, location, occupation) => {
+	const fortuneTemplate = `you will have ${children} with $ {spouse} in ${location}, and work in ${occupation}`
+	return fortuneTemplate;
+}
 
 
 
@@ -81,7 +91,15 @@ const shakira = (arr) => {
 
  shakira ([1,2,3,4,5])
 
+// class answer
 
+
+
+const returnSecondLowestAndHighest = (someArray) => {
+
+	someArray.sort()
+	return someArray[1] + ' , ' +someArray[someArray.length -1]
+}
 
 //9
 
@@ -106,12 +124,11 @@ sense ("the wheels on the bus go up and down, up and down, up and down", 'u');
 //10
 
 const land = (world) => {
-	let longest = ""
-	let long
+	let longest = '';
 
 	for (i = 0; i < world.length; i++){
-		if(world[i].length >= ){
-			longest = world[i]
+		if(world[i].length >= longest.length){
+			longest = world[i];
 		}
 	}
 
@@ -119,7 +136,21 @@ return longest
 
 }
 
-land ([Mexico], [Cuba], [United States],  [Peru])
+land (['Mexico'], ['Cuba'], ['United States'], ['Argentina'])
+
+//class answer
+
+const returnLongestCountry = (arrayOfCountries) => {
+	let longestWord = '';
+
+	for (let i =0; i < arrayOfCountries.length; i++) {
+		if(arrayOfCountries[i].length >= longestWord.length){
+			longestWord = arrayOfCountries[i]
+		}
+	}
+return longestWord
+
+}
 
 
 
@@ -139,9 +170,37 @@ const reverse = (string) => {
 
 
 
+//class answer
+
+const reverseNumber = (number) => {
+	const numString = number.toString();
+	let word = '';
+	for (let i = numString.length -1; i >= 0; i--) {
+		word = word + numString[i]
+}
+ 	const reverse = parseInt(word, 10)
+ 	return reverse
+}
 
 
+//other answer^
 
 
+const reverseNumber = (number) => {
+ 
+ return parseInt(number.split('').reverse().join(''))
+
+ //other answer again
+
+ const reverseNumber = (number) => {
+ 	let reverse =0;
+ 	while(number !== 0) {
+ 		reverse *= 10;
+ 		reverse += number % 10;
+ 		number -= number % 10;
+ 		number /= 10
+ 	}
+return reverse
+}
 
 
