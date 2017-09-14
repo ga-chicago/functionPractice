@@ -57,19 +57,20 @@ const tellFortune = (numChild, partName, location, job) => {
 
 tellFortune(3, "Sally", "Denver", "botonist")
 tellFortune(1, "Tara", "San Francisco", "writer")
-tellFortune(3, "Lacy", "Cleaveland", "chef")
+tellFortune(3, "Lacy", "Cleaveland", "chef");
 
 // 5.
+// Incomplete
 
-function arrayEval = (array) => {
-	small = Math.max(array)
-	large = Math.min(array)
-	//const array = [4,5,7,3,22,89,6,2433];
-	for (a = 1; a < array.length; a++) {
-		for (i in array) 
-	}
+const arrEval = (array) => {
+	array.sort;
+	secMax = array[2];
+	secMin = array[array.length - 2];
+	console.log("Second to smallest is", secMin);
+	console.log("Second to largest is", secMax);
+};
 
-}
+arrEval([5, 4534, 545, 43, 76, 564, 7, 10]);
 
 // 6.
 
