@@ -44,3 +44,16 @@ tellFortune(3, 'Bjork', 'Iceland', 'walrus');
 tellFortune(0, 'Andy the Aardvark', 'Tuscaloosa', 'tow truck salesman');
 tellFortune(10, 'Winnie Fitzwalker', 'The Azores', 'commodities trader');
 
+//question 5
+
+const arr = [1, 2, 3, 4, 5];
+arr.sort(function(a, b){return a - b});
+
+const printTwo = (array) => {
+	const answers = [];
+	array.pop();
+	array.shift();
+	answers.push(Math.min(...array));
+	answers.push(Math.max(...array));
+	return (answers);
+}
