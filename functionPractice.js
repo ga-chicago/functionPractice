@@ -99,6 +99,21 @@ const longest = (countryNames) => {
 	console.log("The country with the largest name is", winner);
 };
 
+// 8.
+
+const revNum = (number) => {
+	const numStr = number.toString();
+	let word = "";
+
+	for (i = numStr.length -1; i >= 0; i--) {
+		word = word + numStr[i];
+	}
+
+	const reverse = parseInt(word,10);
+
+	console.log(reverse);
+}
+
 
 
 
