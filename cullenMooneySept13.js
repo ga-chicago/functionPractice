@@ -50,3 +50,15 @@ tellFortune(5, 'Mary', 'Chicago', 'Lawyer');
 tellFortune(0, 'Rick', 'Alberta', 'Dentist');
 tellFortune(10, 'Susie', 'West Virginia', 'Nascar Driver');
 
+// #5  --> can't figure out how to print min and max
+const secLowSecHigh = () => {
+	const sampleArr = [13, 5, 25, 3, 17];
+	const max = Math.max.apply(null, sampleArr);
+	sampleArr.splice(sampleArr.indexOf(max), 1);
+	const min = Math.min.apply(null, sampleArr);
+	sampleArr.splice(sampleArr.indexOf(min), 1);
+	return Math.min.apply(null, sampleArr), Math.max.apply(null, sampleArr);
+};
+secLowSecHigh();
+
+
