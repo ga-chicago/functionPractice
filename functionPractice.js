@@ -26,18 +26,39 @@ const assignGrade = (numScore) => {
 
  	if (numScore >= 90) {
  		let letScore = "A";
- 		console.log("You got a", letScore)
+ 		console.log("For", numScore, "you got an", letScore)
  	} else if (numScore >= 80) {
  		let letScore = "B";
- 		console.log("You got a", letScore)
+ 		console.log("For", numScore, "you got a", letScore)
  	} else if (numScore >= 70) {
  		let letScore = "C";
- 		console.log("You got a", letScore)
+ 		console.log("For", numScore, "you got a", letScore)
  	} else if (numScore >= 60) {
  		let letScore = "D";
- 		console.log("You got a", letScore)
+ 		console.log("For", numScore, "you got a", letScore)
  	} else {
  		let letScore = "F";
- 		console.log("You got a", letScore)
+ 		console.log("For", numScore, "you got an", letScore)
  	}
  };
+
+ // 3.
+
+for (let s = 60; s <= 100; s++) {
+	assignGrade(s);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
