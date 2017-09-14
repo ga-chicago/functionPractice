@@ -70,6 +70,20 @@ const longestCountry = (countryArray) => {
 	console.log("The longest country name is " + countryArray[longest] + ".");
 };
 
+// Number 8
+const myNumber = 1237654;
+const numReverse = (num) => {
+	let arr = [];
+	let numString = num.toString();
+	arr = numString.split("");
+	arr.reverse();
+	numString = "";
+	for (let i = 0; i < arr.length; i++){
+		numString += arr[i];
+	};
+	return (parseInt(numString));
+};
+
 
 
 
