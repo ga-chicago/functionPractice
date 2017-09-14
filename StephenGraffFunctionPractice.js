@@ -21,3 +21,7 @@ const assignGrade = (x) => {
 	 }
 
 };
+//3.
+for(let i = 60; i <= 100; i++){
+	console.log("For " + i + ", you got a " + assignGrade(i) +".")
+}
