@@ -47,9 +47,9 @@ tellFortune(10, 'Winnie Fitzwalker', 'The Azores', 'commodities trader');
 //question 5
 
 const arr = [1, 2, 3, 4, 5];
-arr.sort(function(a, b){return a - b});
 
 const printTwo = (array) => {
+	array.sort(function(a, b){return a - b});
 	const answers = [];
 	array.pop();
 	array.shift();
@@ -66,3 +66,22 @@ let letter = 'o';
 const letterFrequency = (text, letter) => {
 	return (text.split(letter).length - 1);
 }
+
+//question 7
+
+const nations = ["Australia", "Germany", "United States of America"];
+
+const longestCountryName = (countries) => {
+	const characterCount = [];
+	for (i = 0; i < countries.length; i++) {
+		characterCount.push(countries[i].length)
+	}
+	characterCount.sort(function(a, b){return a - b});
+	for (i = 0; i < countries.length; i++) {
+		if (countries[i].length === characterCount[characterCount.length - 1]) {
+			return (countries[i]);
+		}
+	}
+}
+
+//question 8
