@@ -83,6 +83,21 @@ const countLet = (string, letter) => {
 	console.log(countTotal)
 }
 
+// 7.
+
+const longest = (countryNames) => {
+	let longestName = 0;
+	let winner;
+
+	for (i = 0; i < countryNames.length; i++) {
+		if (countryNames[i].length > longestName){
+			longestName = countryNames[i].length;
+			winner = countryNames[i];
+		};
+	};
+
+	console.log("The country with the largest name is", winner);
+};
 
 
 
