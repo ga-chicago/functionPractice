@@ -57,6 +57,13 @@ for (i = 60; i <= 100; i++){
 	// Call that function 3 times with 3 different values for the
 		// arguments.
 
+const tellFortune = (childrenNumber, partnerName, location, job) => {
+	console.log("You will be a " + job + " in " + location + ", and married to " + partnerName + " with " + childrenNumber + " kids.");
+};
+tellFortune(5, "Lisa", "Springfield", "salesman");
+tellFortune(1, "Brian", "Dublin", "manager of a hotel");
+tellFortune(12, "Ann", "San Diego", "CEO in the tech industry");
+
 
 // Write a JavaScript function which will take an array of numbers
 // stored and find the second lowest and second greatest numbers,
