@@ -46,7 +46,13 @@ tellFortune(5, 'Beth', 'Austin', 'developer')
 
 
 // 8.Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively. Sample array : [1,2,3,4,5] Expected Output : 2,4
-
+const second = (arr) => {
+ 	temp = [];
+ 	temp.push(arr[1]);
+ 	temp.push(arr[arr.length-2]);
+ 	return temp;
+ };
+ second([1,2,3,4,5])
 
 // 9.Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string. Sample arguments : 'Listen to the river sing sweet songs, 'o' Expected output : 1
 const countString = (text, letter) => {
