@@ -24,17 +24,6 @@ assignGrade(76);
 assignGrade(68);
 assignGrade(93);
 
-// problem 3
-// why you come out undefined!!!!!!@@@@@@@@@@@@
-const checkGrade = (grade) => {
-	for (let i = 60; i <= 100; i++){
-		console.log(grade(i))
-		console.log("For " + i + ", you got a " + grade(i))
-	}
-};
-
-checkGrade(assignGrade);
-
 //problem 4 - 7
 const tellFortune = (numberOfChildren, partnerName, geoLocation, jobTitle) => { 
 
@@ -54,6 +43,23 @@ evaluationString("Hello how are you doing today?", "a");
 evaluationString("Hello how are you doing today?", "l");
 evaluationString("Hello how are you doing today?", "o");
 
+//problem 10
+const longestNation = (longestNationName) => {
+	const nation = longestNationName.toString().split(",");
+	console.log (nation);
+	const longestLength = 0
+	let longestName;
+	for (let i = 0; i < nation.length; i++){
+		if (nation[i].length > longestLength){
+			const longestLength = nation[i].length;
+			longestName = nation[i];
+		}
+	}
+	console.log(longestName)
+};
+
+longestNation(["Australia", "Germany", "United States of America"]);
+
 // problem 11
 const reverseNum = () => {
 	let number = prompt("Enter number");
@@ -65,3 +71,4 @@ const reverseNum = () => {
 }
 
 reverseNum();
+
