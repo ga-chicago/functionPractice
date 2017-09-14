@@ -38,9 +38,13 @@ const tellFortune = (children, spouse, location, occupation) => {
 
  
 tellFortune (5, 'Maria', 'Chicago', 'Developer')
+tellFortune (0, 'Oprah', 'LA', 'Sugar Baby')
+tellFortune (2, 'Claudia', 'Paris', 'Philantropist')
+
 
 
 //5
+
 
 
 
@@ -57,6 +61,14 @@ tellFortune (5, 'Maria', 'Chicago', 'Developer')
 
 //8
 
+
+const arr = [1,2,3,4,5];
+
+const shakira = (arr[lowest], arr[highest]) => {
+
+	alert(sharkira)
+
+}
 
 
 
