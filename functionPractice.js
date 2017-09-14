@@ -44,6 +44,10 @@ assignGrade(9);
 // exercise for every value from 60 to 100 - so your log should
 // show "For 89, you got a B. For 90, you got an A.", etc.
 
+for (i = 60; i <= 100; i++){
+	console.log("For " + i + ", you got a " + assignGrade[i] + ".");
+};
+
 
 // Write a function named tellFortune that:
 	// Takes 4 arguments: number of children, partner's name,
