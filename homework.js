@@ -32,19 +32,48 @@ const tellFortune = () => {
 }
 
 // 5.Takes 4 arguments: number of children, partner's name, geographic location, job title.
-const tellFortune = (numOfChildren, partnerName, location, job) => {
- 	console.log("You will be a/an " + job + " in " + location + ", and married to " + partnerName + " with " + numOfChildren + " kid/kids.");
- }
+
 // 6.Tutputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 
 // 7.Call that function 3 times with 3 different values for the arguments.
+
+const tellFortune = (numOfChildren, partnerName, location, job) => {
+ 	console.log("You will be a/an " + job + " in " + location + ", and married to " + partnerName + " with " + numOfChildren + " kid/kids.");
+ }
+tellFortune(1, 'Emily', 'Denver', 'consultant')
+tellFortune(3, 'Anne', 'Chicago', 'doctor')
+tellFortune(5, 'Beth', 'Austin', 'developer')
+
 
 // 8.Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively. Sample array : [1,2,3,4,5] Expected Output : 2,4
 
 
 // 9.Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string. Sample arguments : 'Listen to the river sing sweet songs, 'o' Expected output : 1
+const countString = (text, letter) => {
+	console.log((text.split(letter).length-1))
+}
 
+countString('hi this problem took some time to think about', 'i')
+countString('i dont know about you but what about this', 'o')
+countString('kjnbdfgahbgfhjdabvhbabdhjabfsaknfjkanjhanfhjbahfajhbfahjbfhaj', 'a')
 // 10.Write a JavaScript function that accept a list of country names as input and returns the longest country name as output. Go to the editor Sample function : LongestCountryName(["Australia", "Germany", "United States of America"]) Expected output : "United States of America"
+
+const countries = ["Australia", "Latvia", "China", "North Korea"];
+ const longestCountry = (countryArray) => {
+ 	let countryLength = [];
+ 	let long = 0;
+ 	let longest = 0;
+ 	for (let i = 0; i < countryArray.length; i++){
+ 		countryLength.push(countryArray[i].length);
+ 	};
+ 	for (let i = 0; i < countryLength.length; i++){
+ 		if (countryLength[i] > long){
+ 			longest = i;
+ 			long = countryLength[i];
+ 		};
+ 	};
+ 	console.log("The longest country name is " + countryArray[longest] + ".");
+ };
 
 // 11.Write a JavaScript function that reverse a number. Example x = 32243; Expected Output : 34223
 
