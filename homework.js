@@ -26,18 +26,37 @@ for (i = 60; i <= 100; i++){
  	console.log("For your score of " + i + " you got the letter grade of "  assignGrade(i) + ".");
   };
 // 4.Write a function named tellFortune that:
+const tellFortune = () => {
 
+}
 
 // 5.Takes 4 arguments: number of children, partner's name, geographic location, job title.
-
+const tellFortune = (numOfChildren, partnerName, location, job) => {
+ 	console.log("You will be a/an " + job + " in " + location + ", and married to " + partnerName + " with " + numOfChildren + " kid/kids.");
+ }
 // 6.Tutputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 
 // 7.Call that function 3 times with 3 different values for the arguments.
 
 // 8.Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively. Sample array : [1,2,3,4,5] Expected Output : 2,4
 
+
 // 9.Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string. Sample arguments : 'Listen to the river sing sweet songs, 'o' Expected output : 1
 
 // 10.Write a JavaScript function that accept a list of country names as input and returns the longest country name as output. Go to the editor Sample function : LongestCountryName(["Australia", "Germany", "United States of America"]) Expected output : "United States of America"
 
 // 11.Write a JavaScript function that reverse a number. Example x = 32243; Expected Output : 34223
+
+const myNumber = 1237654;
+ const numReverse = (num) => {
+ 	let arr = [];
+ 	let numString = num.toString();
+ 	arr = numString.split("");
+ 	arr.reverse();
+ 	numString = "";
+ 	for (let i = 0; i < arr.length; i++){
+ 		numString += arr[i];
+ 	};
+ 	return (parseInt(numString));
+ };
+ numReverse(123456)
