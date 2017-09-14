@@ -62,14 +62,24 @@ tellFortune (2, 'Claudia', 'Paris', 'Philantropist')
 //8
 
 
-const arr = [1,2,3,4,5];
 
-const shakira = (arr[lowest], arr[highest]) => {
+const shakira = (arr) => {
+	let lowest = [];
+	let highest = [];
 
-	alert(sharkira)
+	for (i = 0; i < arr.length; i++){
+		if (arr[i] >= arr) {
+			highest.push(arr[i])
+		} else if(arr[i] >= arr) {
+			lowest.push(arr[i])
+		}
 
+	alert(lowest + ' , ' + highest)
+
+	}
 }
 
+ shakira ([1,2,3,4,5])
 
 
 
@@ -95,10 +105,35 @@ sense ("the wheels on the bus go up and down, up and down, up and down", 'u');
 
 //10
 
+const land = () => {
+
+
+
+}
+
 
 
 
 
 
 //11
+
+
+const reverse = (string) => {
+	let mirror = '';
+
+	for( i = string; i <= string.length; i--) {
+		mirror += string[i];
+	}
+	return mirror
+
+}
+
+
+
+
+
+
+
+
 
