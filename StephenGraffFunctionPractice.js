@@ -25,3 +25,15 @@ const assignGrade = (x) => {
 for(let i = 60; i <= 100; i++){
 	console.log("For " + i + ", you got a " + assignGrade(i) +".")
 }
+//4.-7.
+const tellFortune =  (kids, partner, location, hobby) => {
+	console.log("You will be a " + hobby + " in " + location + ", and married to " + partner + " with " + kids +  " kids.")
+}
+
+tellFortune(9,"Julianna", "Beverly", "real estate developer")
+tellFortune(4,"Steve", "Naperville", "programmer and world traveler")
+tellFortune(5,"Mary Jane", "Naperville", "President")
+
+
+
+
