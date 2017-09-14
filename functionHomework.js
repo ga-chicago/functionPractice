@@ -52,7 +52,23 @@ const occurs = (string, letter) => {
 	return (numOccurs);
 };
 
-
+// Number 7
+const countries = ["Australia", "Latvia", "China", "North Korea"];
+const longestCountry = (countryArray) => {
+	let countryLength = [];
+	let long = 0;
+	let longest = 0;
+	for (let i = 0; i < countryArray.length; i++){
+		countryLength.push(countryArray[i].length);
+	};
+	for (let i = 0; i < countryLength.length; i++){
+		if (countryLength[i] > long){
+			longest = i;
+			long = countryLength[i];
+		};
+	};
+	console.log("The longest country name is " + countryArray[longest] + ".");
+};
 
 
 
