@@ -57,3 +57,12 @@ const printTwo = (array) => {
 	answers.push(Math.max(...array));
 	return (answers);
 }
+
+//question 6
+
+let text = 'Listen to the river sing sweet songs';
+let letter = 'o';
+
+const letterFrequency = (text, letter) => {
+	return (text.split(letter).length - 1);
+}
