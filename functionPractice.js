@@ -98,6 +98,17 @@ letterCounter('Listen to the river sing sweet songs', 'o');
 // "Germany", "United States of America"]) Expected output :
 // "United States of America"
 
+const longestCountryName = (listOfNames) => {
+	let currentLongestName = "";
+	for (i = 0; i < listOfNames.length; i++) {
+		if (listOfNames[i].length > currentLongestName.length) {
+			currentLongestName = listOfNames[i];
+		}
+	};
+	return currentLongestName;
+};
+longestCountryName(["Australia", "Germany", "United States of America"]);
+
 
 // Write a JavaScript function that reverse a number. Example :
 // x = 32243; Expected Output : 34223
