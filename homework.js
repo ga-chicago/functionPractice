@@ -58,22 +58,21 @@ countString('i dont know about you but what about this', 'o')
 countString('kjnbdfgahbgfhjdabvhbabdhjabfsaknfjkanjhanfhjbahfajhbfahjbfhaj', 'a')
 // 10.Write a JavaScript function that accept a list of country names as input and returns the longest country name as output. Go to the editor Sample function : LongestCountryName(["Australia", "Germany", "United States of America"]) Expected output : "United States of America"
 
-const countries = ["Australia", "Latvia", "China", "North Korea"];
- const longestCountry = (countryArray) => {
- 	let countryLength = [];
- 	let long = 0;
- 	let longest = 0;
- 	for (let i = 0; i < countryArray.length; i++){
- 		countryLength.push(countryArray[i].length);
- 	};
- 	for (let i = 0; i < countryLength.length; i++){
- 		if (countryLength[i] > long){
- 			longest = i;
- 			long = countryLength[i];
- 		};
- 	};
- 	console.log("The longest country name is " + countryArray[longest] + ".");
+const longestNation = (longestNationName) => {
+ 	const nation = longestNationName.toString().split(',');
+ 	console.log (nation);
+ 	const longestLength = 0
+ 	let longestName;
+ 	for (let i = 0; i < nation.length; i++){
+ 		if (nation[i].length > longestLength){
+ 			const longestLength = nation[i].length;
+ 			longestName = nation[i];
+ 		}
+ 	}	console.log(longestName)
  };
+ 
+ longestNation(['Australia', 'Germany', 'United States of America']);
+
 
 // 11.Write a JavaScript function that reverse a number. Example x = 32243; Expected Output : 34223
 
