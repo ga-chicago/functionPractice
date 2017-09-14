@@ -37,7 +37,7 @@ const filteredArray = countingArray.filter((value, index) => {
   return value === Letter;
 });
 return filteredArray.length
-};x
+};
 
 //6
 const sortingFunction = (one, two, three) => {
@@ -52,4 +52,4 @@ const flip = (Number) => {
 const flipped = Array.from(Number.toString());
 const sorted = flipped.reverse();
 return parseInt(sorted.join(""));
-}
+};
