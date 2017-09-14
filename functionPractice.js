@@ -18,6 +18,23 @@ const assignGrade = (i) => {
 	}
 };
 
+assignGrade(87);
+assignGrade(34);
+assignGrade(76);
+assignGrade(68);
+assignGrade(93);
+
+// problem 3
+// why you come out undefined!!!!!!@@@@@@@@@@@@
+const checkGrade = (grade) => {
+	for (let i = 60; i <= 100; i++){
+		console.log(grade(i))
+		console.log("For " + i + ", you got a " + grade(i))
+	}
+};
+
+checkGrade(assignGrade);
+
 //problem 4 - 7
 const tellFortune = (numberOfChildren, partnerName, geoLocation, jobTitle) => { 
 
