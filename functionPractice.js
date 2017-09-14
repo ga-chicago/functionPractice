@@ -83,8 +83,13 @@ numberExtractor([1,2,3,4,5]);
 // Write a JavaScript function that accepts two arguments, a string
 // and a letter and the function will count the number of
 // occurrences of the specified letter within the string. Sample
-// arguments : 'Listen to the river sing sweet songs, 'o' Expected
-// output : 1
+// arguments : 'Listen to the river sing sweet songs', 'o' Expected
+// Output : 2
+
+const letterCounter = (string, letter) => {
+	return string.split(letter).length - 1;
+};
+letterCounter('Listen to the river sing sweet songs', 'o');
 
 
 // Write a JavaScript function that accept a list of country names
