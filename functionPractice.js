@@ -38,12 +38,21 @@ checkGrade(assignGrade);
 //problem 4 - 7
 const tellFortune = (numberOfChildren, partnerName, geoLocation, jobTitle) => { 
 
-	return "You will be a " + jobTitle + " in " + geoLocation + ", and married to " + partnerName + " with " + numberOfChildren + " kids."
+	console.log("You will be a " + jobTitle + " in " + geoLocation + ", and married to " + partnerName + " with " + numberOfChildren + " kids.")
 }
 
 tellFortune(5, "Amanda" , "Spain", "Matador");
 tellFortune(1, "Samantha", "New York", "Investment Banker");
-tellFortune(3, "Jenna", "New Zeeland", "Sailboat Captain");
+tellFortune(3, "Jenna", "New Zealand", "Sailboat Captain");
+
+// problem 9
+const evaluationString = (text, letter) => {
+	console.log((text.split(letter).length - 1))
+}
+
+evaluationString("Hello how are you doing today?", "a");
+evaluationString("Hello how are you doing today?", "l");
+evaluationString("Hello how are you doing today?", "o");
 
 // problem 11
 const reverseNum = () => {
