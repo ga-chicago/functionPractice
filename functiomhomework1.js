@@ -64,3 +64,9 @@ const flipped = Array.from(Number.toString());
 const sorted = flipped.reverse();
 return parseInt(sorted.join(""));
 };
+
+//for the flair
+const flip = (Number) => {
+const sorted = parseInt(Number.toString().split("").reverse().join(""));
+return sorted
+};
