@@ -86,6 +86,17 @@ const findLongestCountryName = (arr) => {
 };
 findLongestCountryName()
 
+// #8 --> need to get functions synced
+const reverseNumber = (number) => {
+	const string = number.toString();
+}
+const reverseString = (string) => {
+    	const splitString = string.split(""); 
+    	const reverseArray = splitString.reverse();
+    	const joinArray = reverseArray.join(""); 
+    	return joinArray; 
+ };
+ reverseNumber(123);
 
 
 
