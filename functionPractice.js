@@ -16,10 +16,28 @@ for (i = 0; i <= 10; i++){
 
 
 // Write a function named assignGrade that: takes 1 argument, a
-// number score(examle: 89 returns B). returns a grade for the
+// number score(example: 89 returns B). returns a grade for the
 // score, either "A", "B", "C", "D", or "F". Call that function
 // for a few different scores and log the result to make sure it
 // works.
+
+const assignGrade = (score) => {
+	if (score >= 90){
+		return "A";
+	} else if (score >= 80){
+		return "B";
+	} else if (score >= 70){
+		return "C";
+	} else if (score >= 60){
+		return "D";
+	} else {
+		return "F";
+	}
+};
+assignGrade(98);
+assignGrade(81);
+assignGrade(70);
+assignGrade(9);
 
 
 // Check the results of assignGrade function from the previous
