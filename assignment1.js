@@ -105,13 +105,21 @@ sense ("the wheels on the bus go up and down, up and down, up and down", 'u');
 
 //10
 
-const land = () => {
+const land = (world) => {
+	let longest = ""
+	let long
 
+	for (i = 0; i < world.length; i++){
+		if(world[i].length >= ){
+			longest = world[i]
+		}
+	}
 
+return longest
 
 }
 
-
+land ([Mexico], [Cuba], [United States],  [Peru])
 
 
 
@@ -120,10 +128,10 @@ const land = () => {
 
 
 const reverse = (string) => {
-	let mirror = '';
+	let mirror = "";
 
 	for( i = string; i <= string.length; i--) {
-		mirror += string[i];
+		mirror += sting[i];
 	}
 	return mirror
 
