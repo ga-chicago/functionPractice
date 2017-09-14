@@ -6,11 +6,25 @@ for (let i = 0; i <= 10; i++){
 
 // 2.Write a function named assignGrade that: takes 1 argument, a number score(examle: 89 returns B). returns a grade for the score, either "A", "B", "C", "D", or "F". Call that function for a few different scores and log the result to make sure it works.
 
-
-
+const assignGrade = (x) => {
+  if(x >= 90){
+ 		return "A"
+ 	}else if (x >= 80){
+ 	 	return "B"
+ 	}else if (x >= 70){
+ 	 	return "C"
+ 	}else if (x >= 60){
+ 	 	return "D"
+ 	}else {
+ 	 	return "F"
+ 	 }
+ 
+ }
 // 3.Check the results of assignGrade function from the previous exercise for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.
 
-
+for (i = 60; i <= 100; i++){
+ 	console.log("For your score of " + i + " you got the letter grade of "  assignGrade(i) + ".");
+  };
 // 4.Write a function named tellFortune that:
 
 
