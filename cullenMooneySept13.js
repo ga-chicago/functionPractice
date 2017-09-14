@@ -61,4 +61,18 @@ const secLowSecHigh = () => {
 };
 secLowSecHigh();
 
+// #6
+const getOccurrence = (string, character) => {
+    let occurrence = 0;
+
+    for( i = 0; i < string.length; i ++) {
+        if(string[i] === character) {
+            occurrence += 1;
+        }
+    }
+    return occurrence
+}
+
+getOccurrence ('puff daddy is a playa', 'p');
+
 
