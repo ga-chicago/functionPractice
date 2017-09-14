@@ -16,10 +16,21 @@ else if (grade < 90)	{console.log("For " + grade + " you get a B.")}
 else 					{console.log("For " + grade + " you get an A.")}
 };
 
+//I guess we were supposed to make a for loop? I did it in the console..........
+
+for (i=60; i <=100; i++) {assignGrade(i)}
+
 //3
 const tellFortune = (job, partner, city, children) => {
-console.log("You will become a " + job + "in " + city + " and marry " + partner + ". You will have " + children + " children.")
+console.log("You will become a " + job + " in " + city + " and marry " + partner + ". You will have " + children + " children.")
 };
+
+tellFortune("taste tester", "Johanna", "Chicago", 5)
+tellFortune("gundam pilot", "Yukiko", "Neotokyo", 2)
+tellFortune("cult leader", "Foremost Chosen", "South America", 100)
+tellFortune("wizard", "Luna Lovegood", "the U.K.", 3)
+
+
 
 //4
 const sortArray = [2, 1, 3, 5, 6, 73, 7, 9,  3, 565, 879, 98];
